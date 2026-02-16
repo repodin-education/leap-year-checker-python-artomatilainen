@@ -1,5 +1,5 @@
 """
-Leap year checker module
+Leap year checker module 2026
 """
 
 def is_leap_year(year):
