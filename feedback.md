@@ -3,9 +3,9 @@
 
 **Submission ID:** 593bed3d-08c7-404b-839b-34cf65babdc1
 **Course ID:** af1c35bb-384f-4a55-ad05-7b02c5a5158a
-**Analysis ID:** d50186b7-0ba9-4bf4-966f-3122de248020
-**Generated At:** 2026-02-21T15:23:02.748Z
-**Overall Score:** 38/100
+**Analysis ID:** 6f919fce-6389-46e7-ad6b-7478433ec21e
+**Generated At:** 2026-02-21T16:09:01.508Z
+**Overall Score:** 50/100
 
 ---
 
@@ -21,7 +21,8 @@ The student has implemented a logically correct leap year algorithm with good co
 - Good code organization with a dedicated function for the core logic
 - Clear documentation including docstrings and explanatory comments
 - Use of Python best practices (if __name__ == '__main__' for test execution)
-- Inclusion of test cases that verify the algorithm works correctly
+- Inclusion of test cases that verify the algorithm works correctly for standard examples
+- Limited edge case testing
 
 ---
 
@@ -30,9 +31,11 @@ The student has implemented a logically correct leap year algorithm with good co
 - Missing required input/output functionality — Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
 - Output format doesn't match assignment requirements — Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality. Consider moving test code to a separate function or file.
 - No error handling for invalid inputs — Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
+- Limited edge case testing — Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding a test for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
 - Missing required input/output functionality
 - Output format doesn't match assignment requirements
 - No error handling for invalid inputs
+- Limited edge case testing
 
 ---
 
@@ -41,6 +44,7 @@ The student has implemented a logically correct leap year algorithm with good co
 - Missing required input/output functionality: Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
 - Output format doesn't match assignment requirements: Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality. Consider moving test code to a separate function or file.
 - No error handling for invalid inputs: Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
+- Limited edge case testing: Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding a test for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
 
 ---
 
@@ -49,6 +53,7 @@ The student has implemented a logically correct leap year algorithm with good co
 - Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
 - Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality. Consider moving test code to a separate function or file.
 - Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
+- Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding a test for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
 
 ---
 
