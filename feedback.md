@@ -1,59 +1,59 @@
 
 # AI Feedback: Leap Year Checker (Python)
 
-**Overall Score:** 38/100
+**Overall Score:** 65/100
 
 ---
 
 ## Summary
 
-The student has implemented a logically correct leap year algorithm with good code structure and documentation. However, the submission does not fully meet the assignment requirements because it lacks the required input/output functionality and produces output in an incorrect format. The core algorithm is sound, but the program doesn't read user input or output the exact strings specified in the assignment.
+The student has implemented a logically correct leap year algorithm with good code structure and documentation. However, the submission is incomplete as it lacks the required input/output functionality specified in the assignment. The program doesn't read user input or produce the exact output format required, which are critical components of the assignment requirements.
 
 ---
 
 ## Strengths
 
-- Correct implementation of the leap year algorithm with proper conditional nesting
-- Good code organization with a dedicated function for the core logic
+- Correct implementation of leap year algorithm with proper conditional logic
+- Good code organization with clear separation of concerns (function for logic, test block)
 - Clear documentation including docstrings and explanatory comments
 - Use of Python best practices (if __name__ == '__main__' for test execution)
-- Inclusion of test cases that verify the algorithm works correctly for standard examples
-- Limited edge case consideration in the test suite
+- Inclusion of test cases that demonstrate understanding of the algorithm
+- Test suite could be more comprehensive
 
 ---
 
 ## Improvement Areas
 
-- Missing required input/output functionality — Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
-- Output format doesn't match assignment requirements — Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality.
-- No error handling for invalid inputs — Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
-- Limited edge case consideration in the test suite — Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding tests for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
-- Missing required input/output functionality
-- Output format doesn't match assignment requirements
-- No error handling for invalid inputs
-- Limited edge case consideration in the test suite
+- Missing required input/output functionality - program doesn't read user input or produce exact output format — Add code to read input using year = int(input()) and modify output to print exactly 'Leap year' or 'Not a leap year' based on the result. Consider removing or modifying the test block to not interfere with main functionality.
+- No input validation for invalid inputs — Add try-except blocks to handle non-integer inputs and provide user-friendly error messages. Consider whether the program should handle negative years or year zero based on assignment requirements.
+- Test suite could be more comprehensive — Add more edge cases to the test suite, such as year 2400 (leap year), 2100 (not leap year), and boundary cases. Consider adding tests for very large years or year 0 if relevant.
+- Output format doesn't match assignment specifications — Change the output format from '2024: True' to exactly 'Leap year' or 'Not a leap year' as specified in the assignment requirements. Ensure the program produces only the required output line.
+- Missing required input/output functionality - program doesn't read user input or produce exact output format
+- No input validation for invalid inputs
+- Test suite could be more comprehensive
+- Output format doesn't match assignment specifications
 
 ---
 
 ## Immediate Next Steps
 
-- Missing required input/output functionality: Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
-- Output format doesn't match assignment requirements: Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality.
-- No error handling for invalid inputs: Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
-- Limited edge case consideration in the test suite: Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding tests for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
+- Missing required input/output functionality - program doesn't read user input or produce exact output format: Add code to read input using year = int(input()) and modify output to print exactly 'Leap year' or 'Not a leap year' based on the result. Consider removing or modifying the test block to not interfere with main functionality.
+- No input validation for invalid inputs: Add try-except blocks to handle non-integer inputs and provide user-friendly error messages. Consider whether the program should handle negative years or year zero based on assignment requirements.
+- Test suite could be more comprehensive: Add more edge cases to the test suite, such as year 2400 (leap year), 2100 (not leap year), and boundary cases. Consider adding tests for very large years or year 0 if relevant.
+- Output format doesn't match assignment specifications: Change the output format from '2024: True' to exactly 'Leap year' or 'Not a leap year' as specified in the assignment requirements. Ensure the program produces only the required output line.
 
 ---
 
 ## Longer-Term Focus
 
-- Add code to read user input using input() and convert to integer, then call is_leap_year() and print the exact required output. For example: year = int(input()); print('Leap year' if is_leap_year(year) else 'Not a leap year')
-- Modify the program to output exactly 'Leap year' or 'Not a leap year' as specified. The test block should either be removed or modified to not interfere with the main program functionality.
-- Consider adding input validation using try-except blocks to handle cases where the user enters non-numeric values. For example: try: year = int(input()) except ValueError: print('Please enter a valid integer')
-- Add test cases for boundary conditions like year 0, negative years, or very large years. Consider adding tests for year 2400 (leap year) and 2100 (not leap year) as suggested in the README.
+- Add code to read input using year = int(input()) and modify output to print exactly 'Leap year' or 'Not a leap year' based on the result. Consider removing or modifying the test block to not interfere with main functionality.
+- Add try-except blocks to handle non-integer inputs and provide user-friendly error messages. Consider whether the program should handle negative years or year zero based on assignment requirements.
+- Add more edge cases to the test suite, such as year 2400 (leap year), 2100 (not leap year), and boundary cases. Consider adding tests for very large years or year 0 if relevant.
+- Change the output format from '2024: True' to exactly 'Leap year' or 'Not a leap year' as specified in the assignment requirements. Ensure the program produces only the required output line.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 3, 2026, 4:25 PM
+**Model:** RepodIn AI · **Generated:** Mar 4, 2026, 9:35 AM
