@@ -1,5 +1,5 @@
 """
-Leap year checker module 3rd of Mars, 2026. Testing #30
+Leap year checker module 3rd of Mars, 2026. Testing #31
 """
 
 def is_leap_year(year):
@@ -17,7 +17,7 @@ def is_leap_year(year):
 
 # Manual testing
 if __name__ == "__main__":
-    test_years = [2024, 2023, 1900, 2000]
+    test_years = [2024, 2023, 1900, 2000, 2400]
     for year in test_years:
         result = is_leap_year(year)
         print(f"{year}: {result}")
