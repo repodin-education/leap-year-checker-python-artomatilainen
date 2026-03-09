@@ -7,43 +7,43 @@
 
 ## Summary
 
-The student has implemented a logically correct leap year algorithm with good code structure and documentation, but the submission does not fully meet the assignment requirements due to missing input/output functionality and incorrect output format. The core algorithm is sound, but the program lacks the required user interaction and exact output strings specified in the assignment.
+The submission implements a logically correct leap year algorithm with good code structure, but it fails to meet key assignment requirements for input/output handling and exact output format, resulting in significant gaps.
 
 ---
 
 ## Strengths
 
-- Correct implementation of the leap year algorithm with proper conditional logic and modulo operations.
-- Good code organization with a dedicated function, clear documentation, and use of Python best practices.
-- Inclusion of manual test cases that verify the algorithm for standard examples like 2000 and 1900.
-- Output format is incorrect: the current output prints in a different format (e.g., '2000: True') instead of the exact strings required.
+- Correct implementation of leap year logic with proper conditional checks and nesting.
+- Good code organization with a clear function and documentation, including docstrings and comments.
+- Use of testing within if __name__ == '__main__' to verify algorithm functionality with multiple cases.
+- Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'.
 
 ---
 
 ## Improvement Areas
 
-- Missing required input/output functionality: the program does not read user input using input() or print the exact output strings 'Leap year' or 'Not a leap year' as specified. — Add code to read an integer from input, call is_leap_year, and print the result in the required format. For example: year = int(input()); if is_leap_year(year): print('Leap year') else: print('Not a leap year').
-- Output format is incorrect: the current output prints in a different format (e.g., '2000: True') instead of the exact strings required. — Modify the print statements to output exactly 'Leap year' or 'Not a leap year' without additional text, as per the assignment examples.
-- Missing required input/output functionality: the program does not read user input using input() or print the exact output strings 'Leap year' or 'Not a leap year' as specified.
-- Output format is incorrect: the current output prints in a different format (e.g., '2000: True') instead of the exact strings required.
+- Missing input handling: the program does not read user input as required. — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
+- Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'. — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment examples.
+- Missing input handling: the program does not read user input as required.
+- Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'.
 
 ---
 
 ## Immediate Next Steps
 
-- Missing required input/output functionality: the program does not read user input using input() or print the exact output strings 'Leap year' or 'Not a leap year' as specified.: Add code to read an integer from input, call is_leap_year, and print the result in the required format. For example: year = int(input()); if is_leap_year(year): print('Leap year') else: print('Not a leap year').
-- Output format is incorrect: the current output prints in a different format (e.g., '2000: True') instead of the exact strings required.: Modify the print statements to output exactly 'Leap year' or 'Not a leap year' without additional text, as per the assignment examples.
+- Missing input handling: the program does not read user input as required.: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
+- Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'.: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment examples.
 
 ---
 
 ## Longer-Term Focus
 
-- Add code to read an integer from input, call is_leap_year, and print the result in the required format. For example: year = int(input()); if is_leap_year(year): print('Leap year') else: print('Not a leap year').
-- Modify the print statements to output exactly 'Leap year' or 'Not a leap year' without additional text, as per the assignment examples.
+- Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
+- Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment examples.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 9, 2026, 7:57 PM
+**Model:** RepodIn AI · **Generated:** Mar 9, 2026, 7:58 PM
