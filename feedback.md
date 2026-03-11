@@ -24,10 +24,10 @@ The submission implements a logically correct leap year algorithm with good code
 
 - Missing input handling: the program does not read user input as required. — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
 - Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'. — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment requirements.
-- Lack of input validation and edge case handling (e.g., negative years, non-integer input). — Implement error handling to validate input, such as checking for integer type and positive years, and provide user-friendly error messages.
+- Lack of input validation and edge case handling for non-integer or invalid inputs. — Implement error handling (e.g., try-except blocks) to manage cases where input is not a valid integer, and consider edge cases like negative years or zero.
 - Missing input handling: the program does not read user input as required.
 - Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'.
-- Lack of input validation and edge case handling (e.g., negative years, non-integer input).
+- Lack of input validation and edge case handling for non-integer or invalid inputs.
 
 ---
 
@@ -35,7 +35,7 @@ The submission implements a logically correct leap year algorithm with good code
 
 - Missing input handling: the program does not read user input as required.: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
 - Incorrect output format: prints test results instead of the exact strings 'Leap year' or 'Not a leap year'.: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment requirements.
-- Lack of input validation and edge case handling (e.g., negative years, non-integer input).: Implement error handling to validate input, such as checking for integer type and positive years, and provide user-friendly error messages.
+- Lack of input validation and edge case handling for non-integer or invalid inputs.: Implement error handling (e.g., try-except blocks) to manage cases where input is not a valid integer, and consider edge cases like negative years or zero.
 
 ---
 
@@ -43,7 +43,7 @@ The submission implements a logically correct leap year algorithm with good code
 
 - Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value.
 - Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if False, as specified in the assignment requirements.
-- Implement error handling to validate input, such as checking for integer type and positive years, and provide user-friendly error messages.
+- Implement error handling (e.g., try-except blocks) to manage cases where input is not a valid integer, and consider edge cases like negative years or zero.
 
 ---
 
