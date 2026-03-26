@@ -13,41 +13,42 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 
 ## Strengths
 
-- Correct implementation of leap year algorithm with proper conditional logic and nesting in is_leap_year function
-- Good code organization with a dedicated function and separation of testing code using if __name__ == '__main__'
-- Clear documentation through docstrings and comments that aid readability
+- Correct implementation of leap year algorithm with proper conditional logic and nesting in is_leap_year function (main.py lines 6-13).
+- Good code organization with a dedicated function and separation of testing code using if __name__ == '__main__' (main.py lines 17-21).
+- Clear documentation through docstrings and comments that aid readability (e.g., docstring in line 5, comments in lines 7-8).
+- Use of manual testing to verify algorithm functionality with multiple test cases (main.py lines 18-21).
 - Incorrect output format; prints test results instead of exact strings
 
 ---
 
 ## Improvement Areas
 
-- Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- No error handling for invalid input (e.g., non-integer values) — Implement input validation using try-except blocks to handle cases where the user enters non-numeric input, and provide clear error messages.
+- Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements. For example, add a section before the testing block to prompt for user input.
+- Incorrect output format; prints test results instead of exact strings — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, exactly as required in README.md. Update the print statement in line 21 to use conditional formatting.
+- Lack of input validation and error handling for edge cases — Implement input validation to handle non-integer inputs, negative years, or other invalid data. Use try-except blocks or conditionals to provide clear error messages and prevent crashes.
 - Missing user input handling as required by the assignment
 - Incorrect output format; prints test results instead of exact strings
-- No error handling for invalid input (e.g., non-integer values)
+- Lack of input validation and error handling for edge cases
 
 ---
 
 ## Immediate Next Steps
 
-- Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- No error handling for invalid input (e.g., non-integer values): Implement input validation using try-except blocks to handle cases where the user enters non-numeric input, and provide clear error messages.
+- Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements. For example, add a section before the testing block to prompt for user input.
+- Incorrect output format; prints test results instead of exact strings: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, exactly as required in README.md. Update the print statement in line 21 to use conditional formatting.
+- Lack of input validation and error handling for edge cases: Implement input validation to handle non-integer inputs, negative years, or other invalid data. Use try-except blocks or conditionals to provide clear error messages and prevent crashes.
 
 ---
 
 ## Longer-Term Focus
 
-- Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- Implement input validation using try-except blocks to handle cases where the user enters non-numeric input, and provide clear error messages.
+- Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements. For example, add a section before the testing block to prompt for user input.
+- Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, exactly as required in README.md. Update the print statement in line 21 to use conditional formatting.
+- Implement input validation to handle non-integer inputs, negative years, or other invalid data. Use try-except blocks or conditionals to provide clear error messages and prevent crashes.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:42 PM
+**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:43 PM
