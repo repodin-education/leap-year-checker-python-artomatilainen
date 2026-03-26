@@ -24,8 +24,10 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 
 - Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
 - Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year' — Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
+- No input validation or error handling for non-integer inputs — Add try-except blocks or validation to handle cases where input is not a valid integer, providing clear error messages to the user.
 - Missing user input handling as required by the assignment
 - Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'
+- No input validation or error handling for non-integer inputs
 
 ---
 
@@ -33,6 +35,7 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 
 - Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
 - Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year': Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
+- No input validation or error handling for non-integer inputs: Add try-except blocks or validation to handle cases where input is not a valid integer, providing clear error messages to the user.
 
 ---
 
@@ -40,6 +43,7 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 
 - Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
 - Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
+- Add try-except blocks or validation to handle cases where input is not a valid integer, providing clear error messages to the user.
 
 ---
 
