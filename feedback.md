@@ -23,8 +23,8 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 ## Improvement Areas
 
 - Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year' — Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
-- No input validation or error handling for non-integer inputs — Implement try-except blocks or input validation to handle cases where the user enters non-numeric values, ensuring the program doesn't crash.
+- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year' — Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the boolean result, matching the assignment examples.
+- No input validation or error handling for non-integer inputs — Add try-except blocks or validation checks to handle cases where the user enters invalid input (e.g., strings, floats) and provide clear error messages.
 - Missing user input handling as required by the assignment
 - Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'
 - No input validation or error handling for non-integer inputs
@@ -34,16 +34,16 @@ The submission demonstrates a solid understanding of leap year logic with a corr
 ## Immediate Next Steps
 
 - Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year': Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
-- No input validation or error handling for non-integer inputs: Implement try-except blocks or input validation to handle cases where the user enters non-numeric values, ensuring the program doesn't crash.
+- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year': Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the boolean result, matching the assignment examples.
+- No input validation or error handling for non-integer inputs: Add try-except blocks or validation checks to handle cases where the user enters invalid input (e.g., strings, floats) and provide clear error messages.
 
 ---
 
 ## Longer-Term Focus
 
 - Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the assignment examples.
-- Implement try-except blocks or input validation to handle cases where the user enters non-numeric values, ensuring the program doesn't crash.
+- Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the boolean result, matching the assignment examples.
+- Add try-except blocks or validation checks to handle cases where the user enters invalid input (e.g., strings, floats) and provide clear error messages.
 
 ---
 
