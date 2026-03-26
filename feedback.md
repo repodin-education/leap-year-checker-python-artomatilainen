@@ -7,35 +7,36 @@
 
 ## Summary
 
-The submission demonstrates a correct leap year algorithm with good code structure, but it fails to meet key assignment requirements for input/output handling and exact output format, resulting in significant gaps.
+The submission demonstrates a solid understanding of leap year logic with a correctly implemented algorithm and good code structure, but it fails to meet key assignment requirements for input/output handling and exact output format, resulting in significant gaps.
 
 ---
 
 ## Strengths
 
-- Correct implementation of leap year algorithm with proper conditional nesting and modulo operations.
-- Good code organization with a clear function, docstring, and comments that explain the logic step-by-step.
-- Use of if __name__ == '__main__' for manual testing, demonstrating understanding of modular code structure.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'.
+- Correct implementation of leap year algorithm with proper conditional logic and nesting
+- Good code organization with a dedicated function and separation of testing code
+- Clear documentation through docstrings and comments that aid readability
+- Use of manual testing to verify algorithm functionality with multiple test cases
+- Incorrect output format; prints test results instead of exact strings
 
 ---
 
 ## Improvement Areas
 
-- Missing user input handling as required by the assignment. — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'. — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- Lack of input validation and error handling for invalid inputs. — Implement try-except blocks to handle non-integer inputs or use validation checks, and provide clear error messages to the user.
-- Missing user input handling as required by the assignment.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'.
-- Lack of input validation and error handling for invalid inputs.
+- Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
+- Incorrect output format; prints test results instead of exact strings — Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
+- Lack of input validation and error handling for invalid inputs — Implement input validation using try-except blocks to handle non-integer inputs, and consider edge cases like negative years or zero.
+- Missing user input handling as required by the assignment
+- Incorrect output format; prints test results instead of exact strings
+- Lack of input validation and error handling for invalid inputs
 
 ---
 
 ## Immediate Next Steps
 
-- Missing user input handling as required by the assignment.: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'.: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- Lack of input validation and error handling for invalid inputs.: Implement try-except blocks to handle non-integer inputs or use validation checks, and provide clear error messages to the user.
+- Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
+- Incorrect output format; prints test results instead of exact strings: Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
+- Lack of input validation and error handling for invalid inputs: Implement input validation using try-except blocks to handle non-integer inputs, and consider edge cases like negative years or zero.
 
 ---
 
@@ -43,11 +44,11 @@ The submission demonstrates a correct leap year algorithm with good code structu
 
 - Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
 - Modify the output to print 'Leap year' if is_leap_year returns True, and 'Not a leap year' if it returns False, matching the exact format required in the assignment examples.
-- Implement try-except blocks to handle non-integer inputs or use validation checks, and provide clear error messages to the user.
+- Implement input validation using try-except blocks to handle non-integer inputs, and consider edge cases like negative years or zero.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 10:32 AM
+**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 10:33 AM
