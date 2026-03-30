@@ -7,45 +7,50 @@
 
 ## Summary
 
-The submission correctly implements the core logic for determining a leap year and includes basic manual testing. The code is generally clear and follows the standard leap year algorithm. However, it lacks input validation and handling for edge cases beyond the provided test years.
+The submission correctly implements the core logic for determining a leap year and includes basic test cases. The code is reasonably clear, but lacks input validation and robust edge case handling, which are key areas for improvement.
 
 ---
 
 ## Strengths
 
-- Correct implementation of the leap year algorithm.
+- Correct implementation of the core leap year algorithm.
 - Clear and descriptive variable naming.
-- Good use of docstrings and inline comments.
-- Inclusion of manual test cases within the script.
-- Limited edge case testing
-- No user interaction for input
+- Inclusion of a well-structured function with a docstring.
+- Basic manual test cases are provided to demonstrate functionality.
+- Incomplete edge case handling.
+- No handling for non-numeric input.
+- Limited test coverage.
 
 ---
 
 ## Improvement Areas
 
-- Lack of input validation — Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
-- Limited edge case testing — Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
-- No user interaction for input — Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
-- Lack of input validation
-- Limited edge case testing
-- No user interaction for input
+- Lack of input validation. — Modify the `is_leap_year` function to include checks for the input type. For example, ensure the input `year` is an integer and potentially handle cases where it is not. You could raise a `TypeError` or `ValueError` for invalid inputs.
+- Incomplete edge case handling. — Expand the test cases in the `if __name__ == "__main__":` block to include more edge cases. Consider testing with year 0, negative years, and potentially very large or small valid years to ensure the logic holds under various conditions.
+- No handling for non-numeric input. — Implement error handling within the `is_leap_year` function to gracefully manage inputs that are not numbers. This could involve using a `try-except` block to catch potential `TypeError` exceptions if the modulo operator is applied to a non-numeric type.
+- Limited test coverage. — While manual testing is present, consider exploring automated testing frameworks like `unittest` or `pytest` for more comprehensive and repeatable testing of the `is_leap_year` function, especially as the codebase grows.
+- Lack of input validation.
+- Incomplete edge case handling.
+- No handling for non-numeric input.
+- Limited test coverage.
 
 ---
 
 ## Immediate Next Steps
 
-- Lack of input validation: Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
-- Limited edge case testing: Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
-- No user interaction for input: Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
+- Lack of input validation.: Modify the `is_leap_year` function to include checks for the input type. For example, ensure the input `year` is an integer and potentially handle cases where it is not. You could raise a `TypeError` or `ValueError` for invalid inputs.
+- Incomplete edge case handling.: Expand the test cases in the `if __name__ == "__main__":` block to include more edge cases. Consider testing with year 0, negative years, and potentially very large or small valid years to ensure the logic holds under various conditions.
+- No handling for non-numeric input.: Implement error handling within the `is_leap_year` function to gracefully manage inputs that are not numbers. This could involve using a `try-except` block to catch potential `TypeError` exceptions if the modulo operator is applied to a non-numeric type.
+- Limited test coverage.: While manual testing is present, consider exploring automated testing frameworks like `unittest` or `pytest` for more comprehensive and repeatable testing of the `is_leap_year` function, especially as the codebase grows.
 
 ---
 
 ## Longer-Term Focus
 
-- Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
-- Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
-- Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
+- Modify the `is_leap_year` function to include checks for the input type. For example, ensure the input `year` is an integer and potentially handle cases where it is not. You could raise a `TypeError` or `ValueError` for invalid inputs.
+- Expand the test cases in the `if __name__ == "__main__":` block to include more edge cases. Consider testing with year 0, negative years, and potentially very large or small valid years to ensure the logic holds under various conditions.
+- Implement error handling within the `is_leap_year` function to gracefully manage inputs that are not numbers. This could involve using a `try-except` block to catch potential `TypeError` exceptions if the modulo operator is applied to a non-numeric type.
+- While manual testing is present, consider exploring automated testing frameworks like `unittest` or `pytest` for more comprehensive and repeatable testing of the `is_leap_year` function, especially as the codebase grows.
 
 ---
 
