@@ -1,53 +1,55 @@
 
 # AI Feedback: Leap Year Checker (Python)
 
-**Overall Score:** 65/100 (Good)
+**Overall Score:** 85/100 (Very Good)
 
 ---
 
 ## Summary
 
-The submission demonstrates a solid understanding of leap year logic with a correctly implemented algorithm and good code structure, but it fails to meet key assignment requirements for input/output handling and exact output format, resulting in significant gaps.
+The submission correctly implements the core logic for determining a leap year and includes basic manual testing. The code is generally clear and follows the standard leap year algorithm. However, it lacks input validation and handling for edge cases beyond the provided test years.
 
 ---
 
 ## Strengths
 
-- Correct implementation of leap year algorithm with proper conditional logic and nesting in is_leap_year function
-- Good code organization with a dedicated function and separation of testing code using if __name__ == '__main__'
-- Clear documentation through docstrings and comments that aid readability
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'
+- Correct implementation of the leap year algorithm.
+- Clear and descriptive variable naming.
+- Good use of docstrings and inline comments.
+- Inclusion of manual test cases within the script.
+- Limited edge case testing
+- No user interaction for input
 
 ---
 
 ## Improvement Areas
 
-- Missing user input handling as required by the assignment — Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year' — Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the examples in README.md.
-- No input validation or error handling for invalid inputs — Implement try-except blocks to handle non-integer inputs (e.g., ValueError) and consider edge cases like negative years or zero, providing clear error messages to the user.
-- Missing user input handling as required by the assignment
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year'
-- No input validation or error handling for invalid inputs
+- Lack of input validation — Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
+- Limited edge case testing — Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
+- No user interaction for input — Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
+- Lack of input validation
+- Limited edge case testing
+- No user interaction for input
 
 ---
 
 ## Immediate Next Steps
 
-- Missing user input handling as required by the assignment: Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Incorrect output format; prints test results instead of exact strings 'Leap year' or 'Not a leap year': Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the examples in README.md.
-- No input validation or error handling for invalid inputs: Implement try-except blocks to handle non-integer inputs (e.g., ValueError) and consider edge cases like negative years or zero, providing clear error messages to the user.
+- Lack of input validation: Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
+- Limited edge case testing: Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
+- No user interaction for input: Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
 
 ---
 
 ## Longer-Term Focus
 
-- Add code to read an integer from input using input() and int() conversion, then call is_leap_year() with that value, as specified in the README.md requirements.
-- Modify the print statements to output exactly 'Leap year' or 'Not a leap year' based on the function result, matching the examples in README.md.
-- Implement try-except blocks to handle non-integer inputs (e.g., ValueError) and consider edge cases like negative years or zero, providing clear error messages to the user.
+- Add checks at the beginning of the `is_leap_year` function to ensure the input `year` is a positive integer. For example, you could raise a `ValueError` or return `False` for invalid inputs.
+- Expand the `test_years` list in the `if __name__ == "__main__":` block to include more edge cases, such as year 0 (if applicable to the definition being used), very large years, or years just outside the standard rules (e.g., 1999, 2001).
+- Consider modifying the script to prompt the user for a year input using `input()` instead of relying solely on hardcoded test cases, making it a more interactive program.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:55 PM
+**Model:** RepodIn AI · **Generated:** Mar 30, 2026, 7:26 PM
