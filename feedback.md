@@ -1,55 +1,53 @@
 
 # AI Feedback: Leap Year Checker (Python)
 
-**Overall Score:** 85/100 (Very Good)
+**Overall Score:** 69/100 (Good)
 
 ---
 
 ## Summary
 
-The submission correctly implements the core logic for determining leap years and includes basic manual testing. The code is generally clear and follows the standard leap year rules. However, there is no input validation or handling for non-integer inputs, and the manual testing is limited to a predefined list of years.
+The student has demonstrated a strong understanding of the core logic required to determine if a year is a leap year. The `is_leap_year` function is correctly implemented, handling all specified rules and edge cases accurately. The code is well-structured, readable, and includes good documentation through a docstring and comments. However, the submission does not fully meet the assignment's input and output requirements, as it lacks user input handling and does not produce the output in the exact specified format. The current `main` block is set up for testing rather than fulfilling the interactive program requirements.
 
 ---
 
 ## Strengths
 
-- Correct implementation of the leap year algorithm, including century year rules.
-- Clear and readable code with descriptive variable names and appropriate comments/docstrings.
-- Inclusion of manual testing to demonstrate functionality.
-- Good code structure with a dedicated function for the core logic.
-- Limited testing scope.
-- No handling for non-integer input.
+- The `is_leap_year` function correctly implements the complex leap year rules, demonstrating a solid understanding of conditional logic and modulo operations.
+- The code is well-structured, using a dedicated function for the leap year logic, which promotes reusability and readability.
+- The function includes a clear docstring and helpful inline comments, enhancing code understanding.
+- The inclusion of a `if __name__ == "__main__":` block with test cases is a good practice for verifying the function's correctness during development.
 
 ---
 
 ## Improvement Areas
 
-- Lack of input validation. — Implement input validation to ensure the user provides a valid integer year. For example, use a try-except block to catch `ValueError` if the input cannot be converted to an integer, and add checks for non-positive years if applicable.
-- Limited testing scope. — Expand the testing to include user input rather than just a hardcoded list. Consider adding test cases for edge scenarios like year 0, negative years, or very large years if the problem domain requires it.
-- No handling for non-integer input. — Modify the program to gracefully handle inputs that are not integers. For instance, prompt the user again or display an error message if they enter text or a floating-point number.
-- Lack of input validation.
-- Limited testing scope.
-- No handling for non-integer input.
+- The program does not read input from the user as required by the assignment. — Modify the `if __name__ == "__main__":` block to include `year = int(input())` to read a single integer from standard input, as specified in the assignment requirements.
+- The program's output does not match the exact format specified in the assignment. — After calling `is_leap_year(year)`, use an `if/else` statement to print either `"Leap year"` or `"Not a leap year"` based on the boolean result, instead of `print(f"{year}: {result}")`.
+- The program does not include error handling for invalid input (e.g., non-integer input). — Consider wrapping the `int(input())` call in a `try-except` block to gracefully handle `ValueError` if the user enters text that cannot be converted to an integer.
+- The program does not read input from the user as required by the assignment.
+- The program's output does not match the exact format specified in the assignment.
+- The program does not include error handling for invalid input (e.g., non-integer input).
 
 ---
 
 ## Immediate Next Steps
 
-- Lack of input validation.: Implement input validation to ensure the user provides a valid integer year. For example, use a try-except block to catch `ValueError` if the input cannot be converted to an integer, and add checks for non-positive years if applicable.
-- Limited testing scope.: Expand the testing to include user input rather than just a hardcoded list. Consider adding test cases for edge scenarios like year 0, negative years, or very large years if the problem domain requires it.
-- No handling for non-integer input.: Modify the program to gracefully handle inputs that are not integers. For instance, prompt the user again or display an error message if they enter text or a floating-point number.
+- The program does not read input from the user as required by the assignment.: Modify the `if __name__ == "__main__":` block to include `year = int(input())` to read a single integer from standard input, as specified in the assignment requirements.
+- The program's output does not match the exact format specified in the assignment.: After calling `is_leap_year(year)`, use an `if/else` statement to print either `"Leap year"` or `"Not a leap year"` based on the boolean result, instead of `print(f"{year}: {result}")`.
+- The program does not include error handling for invalid input (e.g., non-integer input).: Consider wrapping the `int(input())` call in a `try-except` block to gracefully handle `ValueError` if the user enters text that cannot be converted to an integer.
 
 ---
 
 ## Longer-Term Focus
 
-- Implement input validation to ensure the user provides a valid integer year. For example, use a try-except block to catch `ValueError` if the input cannot be converted to an integer, and add checks for non-positive years if applicable.
-- Expand the testing to include user input rather than just a hardcoded list. Consider adding test cases for edge scenarios like year 0, negative years, or very large years if the problem domain requires it.
-- Modify the program to gracefully handle inputs that are not integers. For instance, prompt the user again or display an error message if they enter text or a floating-point number.
+- Modify the `if __name__ == "__main__":` block to include `year = int(input())` to read a single integer from standard input, as specified in the assignment requirements.
+- After calling `is_leap_year(year)`, use an `if/else` statement to print either `"Leap year"` or `"Not a leap year"` based on the boolean result, instead of `print(f"{year}: {result}")`.
+- Consider wrapping the `int(input())` call in a `try-except` block to gracefully handle `ValueError` if the user enters text that cannot be converted to an integer.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** Mar 30, 2026, 8:47 PM
+**Model:** RepodIn AI · **Generated:** May 9, 2026, 5:30 PM
