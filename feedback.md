@@ -7,48 +7,48 @@
 
 ## Summary
 
-The student has successfully implemented the core logic for determining a leap year, demonstrating a good understanding of conditional statements and modulo operations. The `is_leap_year` function is correct and well-structured. However, the program does not fully meet the assignment's input and output requirements for the main execution flow, as it uses hardcoded test values instead of reading user input and prints results in a non-standard format.
+The student has successfully implemented the core logic for determining a leap year, demonstrating a strong understanding of conditional statements and modulo operations. The code is well-structured and readable. However, the submission does not fully meet the assignment's input/output requirements, as it uses hardcoded test values instead of reading user input and does not print the result in the specified format. Input validation for non-integer input is also missing.
 
 ---
 
 ## Strengths
 
-- The core algorithm for determining a leap year is correctly implemented and handles all specified rules and edge cases (e.g., years divisible by 100 but not 400, and years divisible by 400).
-- The code is well-structured, using a dedicated function `is_leap_year` for modularity.
-- The code is highly readable with clear variable names, a descriptive function name, and helpful comments and docstrings.
-- The inclusion of a manual testing block (`if __name__ == "__main__":`) demonstrates good practice for verifying functionality.
-- The program lacks input validation for the year entered by the user.
+- The core leap year determination algorithm is correctly implemented, demonstrating a solid understanding of conditional logic and modulo operations.
+- The code is well-structured, readable, and uses clear variable and function names.
+- The inclusion of a docstring and inline comments enhances code understanding.
+- The student included a manual testing block, which is a good practice for verifying functionality.
+- There is no input validation to handle cases where the user might enter non-integer input.
 
 ---
 
 ## Improvement Areas
 
-- The program does not read input from the user as required by the assignment. — Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
-- The output format does not match the assignment's exact requirements for the main program execution. — Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
-- The program lacks input validation for the year entered by the user. — Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
-- The program does not read input from the user as required by the assignment.
-- The output format does not match the assignment's exact requirements for the main program execution.
-- The program lacks input validation for the year entered by the user.
+- The program does not read input from the user as specified in the assignment requirements. — Modify the `if __name__ == "__main__":` block to prompt the user for a year using `input()` instead of iterating through a hardcoded list.
+- The output format does not match the exact requirements of 'Leap year' or 'Not a leap year'. — Adjust the `print()` statement to output only 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`.
+- There is no input validation to handle cases where the user might enter non-integer input. — Implement a `try-except` block around the `input()` call (once added) and the integer conversion to gracefully handle `ValueError` if the user enters non-numeric data.
+- The program does not read input from the user as specified in the assignment requirements.
+- The output format does not match the exact requirements of 'Leap year' or 'Not a leap year'.
+- There is no input validation to handle cases where the user might enter non-integer input.
 
 ---
 
 ## Immediate Next Steps
 
-- The program does not read input from the user as required by the assignment.: Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
-- The output format does not match the assignment's exact requirements for the main program execution.: Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
-- The program lacks input validation for the year entered by the user.: Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
+- The program does not read input from the user as specified in the assignment requirements.: Modify the `if __name__ == "__main__":` block to prompt the user for a year using `input()` instead of iterating through a hardcoded list.
+- The output format does not match the exact requirements of 'Leap year' or 'Not a leap year'.: Adjust the `print()` statement to output only 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`.
+- There is no input validation to handle cases where the user might enter non-integer input.: Implement a `try-except` block around the `input()` call (once added) and the integer conversion to gracefully handle `ValueError` if the user enters non-numeric data.
 
 ---
 
 ## Longer-Term Focus
 
-- Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
-- Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
-- Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
+- Modify the `if __name__ == "__main__":` block to prompt the user for a year using `input()` instead of iterating through a hardcoded list.
+- Adjust the `print()` statement to output only 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`.
+- Implement a `try-except` block around the `input()` call (once added) and the integer conversion to gracefully handle `ValueError` if the user enters non-numeric data.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** May 9, 2026, 5:38 PM
+**Model:** RepodIn AI · **Generated:** May 9, 2026, 5:39 PM
