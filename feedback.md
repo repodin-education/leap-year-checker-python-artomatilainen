@@ -7,53 +7,48 @@
 
 ## Summary
 
-The student successfully implemented the core logic for determining a leap year, demonstrating a strong understanding of conditional statements and modulo operations. The `is_leap_year` function correctly handles all specified rules and edge cases. However, the submission does not fully meet the assignment's input and output requirements, as it uses hardcoded test values instead of reading user input and prints a boolean result instead of the specified 'Leap year' or 'Not a leap year' strings. Input validation is also missing.
+The student has successfully implemented the core logic for determining a leap year, demonstrating a good understanding of conditional statements and modulo operations. The `is_leap_year` function is correct and well-structured. However, the program does not fully meet the assignment's input and output requirements for the main execution flow, as it uses hardcoded test values instead of reading user input and prints results in a non-standard format.
 
 ---
 
 ## Strengths
 
-- The core leap year algorithm is correctly implemented and handles all specified rules and edge cases.
-- The code is well-structured with a clear function definition for `is_leap_year`, promoting modularity.
-- Good use of docstrings for the module and function, along with inline comments, enhances code readability.
-- The `if __name__ == "__main__":` block provides a useful manual testing setup.
-- Incorrect output format for the final result.
-- Module-level docstring could be more informative.
+- The core algorithm for determining a leap year is correctly implemented and handles all specified rules and edge cases (e.g., years divisible by 100 but not 400, and years divisible by 400).
+- The code is well-structured, using a dedicated function `is_leap_year` for modularity.
+- The code is highly readable with clear variable names, a descriptive function name, and helpful comments and docstrings.
+- The inclusion of a manual testing block (`if __name__ == "__main__":`) demonstrates good practice for verifying functionality.
+- The program lacks input validation for the year entered by the user.
 
 ---
 
 ## Improvement Areas
 
-- Missing input reading for the main program execution. — Implement `year = int(input())` at the top level of your script (outside the function) to read the year from the user as required by the assignment.
-- Incorrect output format for the final result. — Modify the `print` statement in your main execution block to output 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`, rather than printing the boolean directly. For example: `print('Leap year')` or `print('Not a leap year')`.
-- Lack of input validation for the year. — Once you implement `input()`, add error handling (e.g., using a `try-except` block for `ValueError`) to ensure the user input is a valid integer. You might also consider adding checks for a reasonable year range.
-- Module-level docstring could be more informative. — Update the module docstring to describe the overall purpose of the script (a leap year checker program) rather than just a date and time, which would be more helpful for someone reading the file.
-- Missing input reading for the main program execution.
-- Incorrect output format for the final result.
-- Lack of input validation for the year.
-- Module-level docstring could be more informative.
+- The program does not read input from the user as required by the assignment. — Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
+- The output format does not match the assignment's exact requirements for the main program execution. — Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
+- The program lacks input validation for the year entered by the user. — Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
+- The program does not read input from the user as required by the assignment.
+- The output format does not match the assignment's exact requirements for the main program execution.
+- The program lacks input validation for the year entered by the user.
 
 ---
 
 ## Immediate Next Steps
 
-- Missing input reading for the main program execution.: Implement `year = int(input())` at the top level of your script (outside the function) to read the year from the user as required by the assignment.
-- Incorrect output format for the final result.: Modify the `print` statement in your main execution block to output 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`, rather than printing the boolean directly. For example: `print('Leap year')` or `print('Not a leap year')`.
-- Lack of input validation for the year.: Once you implement `input()`, add error handling (e.g., using a `try-except` block for `ValueError`) to ensure the user input is a valid integer. You might also consider adding checks for a reasonable year range.
-- Module-level docstring could be more informative.: Update the module docstring to describe the overall purpose of the script (a leap year checker program) rather than just a date and time, which would be more helpful for someone reading the file.
+- The program does not read input from the user as required by the assignment.: Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
+- The output format does not match the assignment's exact requirements for the main program execution.: Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
+- The program lacks input validation for the year entered by the user.: Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
 
 ---
 
 ## Longer-Term Focus
 
-- Implement `year = int(input())` at the top level of your script (outside the function) to read the year from the user as required by the assignment.
-- Modify the `print` statement in your main execution block to output 'Leap year' or 'Not a leap year' based on the boolean result from `is_leap_year`, rather than printing the boolean directly. For example: `print('Leap year')` or `print('Not a leap year')`.
-- Once you implement `input()`, add error handling (e.g., using a `try-except` block for `ValueError`) to ensure the user input is a valid integer. You might also consider adding checks for a reasonable year range.
-- Update the module docstring to describe the overall purpose of the script (a leap year checker program) rather than just a date and time, which would be more helpful for someone reading the file.
+- Modify the `if __name__ == "__main__":` block to include an `input()` call to prompt the user for a year. Remember to convert the input string to an integer using `int()`.
+- Adjust the `print` statement in the main execution block to output either `Leap year` or `Not a leap year` based on the boolean result returned by the `is_leap_year` function, ensuring it matches the specified string exactly.
+- Implement error handling, such as a `try-except` block around the `int(input())` call, to gracefully handle cases where the user might enter non-integer input. You could also consider adding checks for negative years if the assignment implies only positive years.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** Arto Matilainen · **Repository:** `leap-year-checker-python-artomatilainen`
 **Course:** Python · **Assignment:** Leap Year Checker (Python)
-**Model:** RepodIn AI · **Generated:** May 9, 2026, 5:35 PM
+**Model:** RepodIn AI · **Generated:** May 9, 2026, 5:37 PM
